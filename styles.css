@@ -84,7 +84,7 @@ main {
   }
 
   section#projects {
-    margin-top: 5rem;
+    margin-top: 13rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,6 +197,10 @@ section {
     box-sizing: border-box;
   }
 
+  section {
+    min-height: 60dvh;
+  }
+
   header {
     justify-content: center;
     align-items: center;
@@ -234,7 +238,10 @@ section {
     }
 
     section#projects {
+      width: 100%;
+
       h1 {
+        margin-top: 60rem;
         font-size: 1.9rem;
       }
 
@@ -242,23 +249,17 @@ section {
         text-align: center;
         font-size: 0.9rem;
       }
-    }
-  }
 
-  section#projects {
-    margin-top: 25rem;
-    padding-top: -1rem;
-    width: 100%;
+      .items {
+        justify-content: center;
+        grid-template-columns: 1fr;
 
-    .items {
-      justify-content: center;
-      grid-template-columns: 1fr;
-
-      .item {
-        font-size: 0.9rem;
-        width: 100%;
-        height: auto;
-        padding: 1.3rem 1rem;
+        .item {
+          font-size: 0.9rem;
+          width: 100%;
+          height: auto;
+          padding: 1.3rem 1rem;
+        }
       }
     }
   }

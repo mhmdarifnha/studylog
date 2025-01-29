@@ -401,7 +401,8 @@ div.buttons {
   nav {
     padding: 1rem 0;
 
-    a {
+    a,
+    button.back {
       font-size: 1.3rem;
       width: 25%;
       padding: 0.3rem 0.5rem;
