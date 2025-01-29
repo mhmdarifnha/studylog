@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../layout/global.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../../layout/script.js"></script>
+    <title>Travel Bintang Abadi</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#Form</p>
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Travel Bintang Abadi</h1>
+        <!-- code -->
+        <form>
+            <div class="grid-2">
+                <!-- left side -->
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="name">Nama : </label>
+                        <input type="text" name="name" id="name" placeholder="Nama kamu..." required>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="destination">Tujuan : </label>
+                        <select name="destination" id="destination" required>
+                            <option value="">Pilih Tujuan Anda</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Solo">Solo</option>
+                            <option value="Surabaya">Surabaya</option>
+                        </select>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="classTravel">Kelas : </label>
+                        <select name="classTravel" id="classTravel">
+                            <option value="">Pilih Kelas Anda</option>
+                            <option value="Eksekutif">Eksekutif</option>
+                            <option value="Bisnis">Bisnis</option>
+                            <option value="Ekonomi">Ekonomi</option>
+                        </select>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="ammountTicket">Jumlah Tiket : </label>
+                        <input type="text" name="ammountTicket" id="ammountTicket" inputmode="numeric"
+                            placeholder="Jumlah tiket..." required>
+                    </div>
+
+                    <div class="wrapper">
+                        <label>Punya Member? : </label>
+                        <label for="yes" class="flex"><input type="checkbox" name="member" id="yes" value="yes">
+                            Ya</label>
+                        <label></label>
+                    </div>
+                </div>
+
+                <!-- right side -->
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="priceTicket">Harga Tiket : </label>
+                        <input type="text" name="priceTicket" id="priceTicket" placeholder="ex: Rp.150000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="subTotal">Sub Total : </label>
+                        <input type="text" name="subTotal" id="subTotal" placeholder="ex: Rp.150000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="discount">Diskon : </label>
+                        <input type="text" name="discount" id="discount" placeholder="ex: Rp.50000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="totalAmmount">Total Bayar : </label>
+                        <input type="text" name="totalAmmount" id="totalAmmount" placeholder="ex: Rp.100000" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="handleSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

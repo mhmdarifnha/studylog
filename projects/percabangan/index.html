@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../layout/script.js"></script>
+    <title>Percabangan javascript</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+                <p>#PercabanganJavascript</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Percabangan Javascript</h1>
+        <a class="latihan" href="./latihan/index.html">Latihan</a>
+        <!-- code -->
+
+        <h4 class="subBab">If..Else</h4>
+        <h3>Bilangan Negatif, Nol, Atau Positif ???</h3>
+        <form>
+            <div class="wrapper">
+                <label for="bilangan">Masukkan Bilangannya</label>
+                <input type="text" name="bilangan" id="bilangan" placeholder="Masukkan bilangan..." inputmode="numeric">
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="bilanganSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+
+            <div class="wrapper">
+                <label for="result">Hasil </label>
+                <input type="text" name="result" id="result" placeholder="ex: 6 adalah bilangan positif" readonly>
+            </div>
+        </form>
+
+        <h4 class="subBab">Contoh Kasus</h4>
+        <h3>Travel Bintang Abadi</h3>
+        <form>
+            <div class="grid-2">
+                <!-- left side -->
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="name">Nama : </label>
+                        <input type="text" name="name" id="name" placeholder="Nama kamu..." required>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="destination">Tujuan : </label>
+                        <select name="destination" id="destination" required>
+                            <option value="">Pilih Tujuan Anda</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Cirebon">Cirebon</option>
+                            <option value="Tasikmalaya">Tasikmalaya</option>
+                        </select>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="ammountTicket">Jumlah Tiket : </label>
+                        <input type="text" name="ammountTicket" id="ammountTicket" inputmode="numeric"
+                            placeholder="Jumlah tiket..." required>
+                    </div>
+
+                    <div class="wrapper">
+                        <label>Punya Member? : </label>
+                        <label for="yes" class="flex"><input type="checkbox" name="member" id="yes" value="yes">
+                            Ya</label>
+                        <label></label>
+                    </div>
+                </div>
+
+                <!-- right side -->
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="priceTicket">Harga Tiket : </label>
+                        <input type="text" name="priceTicket" id="priceTicket" placeholder="ex: Rp.150000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="subTotal">Sub Total : </label>
+                        <input type="text" name="subTotal" id="subTotal" placeholder="ex: Rp.150000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="discount">Diskon : </label>
+                        <input type="text" name="discount" id="discount" placeholder="ex: Rp.50000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="totalAmmount">Total Bayar : </label>
+                        <input type="text" name="totalAmmount" id="totalAmmount" placeholder="ex: Rp.100000" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="bntngAbdiSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <h4 class="subBab">Percabangan Majemuk</h4>
+        <h3>Menghitung Indeks Prestasi</h3>
+        <form>
+            <div class="grid-4">
+                <div class="item">
+                    <h4>Quis</h4>
+                    <div class="wrapper">
+                        <label for="quis">(10%) : </label>
+                        <input type="text" name="quis" id="quis" placeholder="Quis" inputmode="numeric" pattern="[0-9]+"
+                            required>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4>Tugas</h4>
+                    <div class="wrapper">
+                        <label for="tugas">(20%)</label>
+                        <input type="text" name="tugas" id="tugas" placeholder="Tugas" inputmode="numeric"
+                            pattern="[0-9]+" required>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4>UTS</h4>
+                    <div class="wrapper">
+                        <label for="uts">(30%)</label>
+                        <input type="text" name="uts" id="uts" placeholder="UTS" inputmode="numeric" pattern="[0-9]+"
+                            required>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4>UAS</h4>
+                    <div class="wrapper">
+                        <label for="uas">(40%)</label>
+                        <input type="text" name="uas" id="uas" placeholder="UAS" inputmode="numeric" pattern="[0-9]+"
+                            required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="prestasiSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+
+            <div class="grid-2">
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="viewIp">Indeks Prestasi</label>
+                        <input type="text" name="viewIp" id="viewIp" placeholder="Indeks prestasi" readonly>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="viewKet">Keterangan</label>
+                        <input type="text" name="viewKet" id="viewKet" placeholder="Keterangan" readonly>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <h4 class="subBab">Switch</h4>
+        <h3>Penggunaan Percabangan Switch</h3>
+        <form>
+            <div class="wrapper">
+                <label for="month">Masukkan Nomor Bulan [1-12] : </label>
+                <input type="text" name="month" id="month" placeholder="ex: 11" inputmode="numeric">
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="askMonth(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+
+            <div class="wrapper">
+                <label for="viewMonth">Bulan </label>
+                <input type="text" name="viewMonth" id="viewMonth" placeholder="November" readonly>
+            </div>
+        </form>
+    </main>
+
+
+    <script src="bilangan.js"></script>
+    <script src="bntngabdi.js"></script>
+    <script src="prestasi.js"></script>
+    <script src="month.js"></script>
+</body>
+
+</html>

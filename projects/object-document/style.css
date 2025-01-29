@@ -1,0 +1,7 @@
+select#page {
+  border: none;
+  overflow: auto;
+  resize: none;
+  width: -1rem;
+  height: fit-content;
+}

@@ -1,0 +1,46 @@
+main {
+  form {
+    width: 40%;
+
+    .wrapper:first-child {
+      width: 35%;
+
+      input[type="text"] {
+        width: 6rem;
+      }
+    }
+
+    .wrapper:not(.sm) {
+      width: 60%;
+      gap: 1rem;
+
+      input[type="text"] {
+        width: 8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    form {
+      width: 100%;
+
+      .wrapper:first-child {
+        width: 100%;
+
+        input[type="text"] {
+          width: 70%;
+        }
+      }
+
+      .wrapper:not(.sm) {
+        width: 70%;
+
+        input[type="text"] {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

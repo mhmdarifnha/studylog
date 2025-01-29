@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../layout/script.js"></script>
+    <title>Object Javascript</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+                <p>#ObjectJavascript</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>objek javascript</h1>
+        <a class="latihan" href="./form/index.html">Contoh Formulir</a>
+        <h4 class="subBab">Objek Text</h4>
+        <form name="inputData">
+            <label for="name">Nama Anda: </label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required>
+
+            <label for="address">Alamat: </label>
+            <input type="text" name="address" id="address" placeholder="Street gatotkaca 45" required>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="handleSubmit()">
+                <input type="reset" value="Reset" onclick="handleReset()">
+            </div>
+        </form>
+
+        <form name="viewData">
+            <label for="viewName">Nama Anda adalah </label>
+            <input type="text" name="viewName" id="viewName" placeholder="Your name." readonly>
+
+            <label for="viewAddress">Alamat Anda adalah </label>
+            <input type="text" name="viewAddress" id="viewAddress" placeholder="Your address." readonly>
+        </form>
+
+        <h4 class="subBab">Objek Radio</h4>
+        <form name="objectRadio">
+            <label class="sigma" for="sigma"><input type="radio" name="sigma" id="sigma">Sigma</label>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="submitRadio(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <h4 class="subBab">Objek Checkbox</h4>
+        <form name="objectCheckbox">
+            <p>Hobby anda : </p>
+            <div>
+                <input type="checkbox" value="ON" name="ngoding" id="ngoding"> <label for="ngoding">Ngoding</label>
+            </div>
+            <div>
+                <input type="checkbox" value="ON" name="belajar" id="belajar"> <label for="belajar">Belajar</label>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="submitCheckbox(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <h4 class="subBab">Objek Textarea</h4>
+        <form name="objectTextarea">
+            <label for="comment">Komentar anda: </label>
+            <textarea name="comment" id="comment"
+                placeholder="Aku suka belajar javascript karena sangat asik sekali"></textarea>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="submitTextarea()">
+                <input type="reset" value="Reset" onclick="resetTextarea()">
+            </div>
+        </form>
+
+
+        <form name="outputComment">
+            <label for="commentUser">Komentar anda adalah </label>
+            <textarea name="commentUser" id="commentUser" readonly placeholder="Your commentar."></textarea>
+        </form>
+
+        <h4 class="subBab">Objek Select</h4>
+        <form name="objectSelect">
+            <label for="jurusan">Jurusan di SMK NU Ungaran</label>
+            <select name="jurusan" id="jurusan">
+                <option value=" ">Pilih Salah Satu Jurusan</option>
+                <option value="TJKT">TJKT</option>
+                <option value="BP">BP</option>
+                <option value="DKV">DKV</option>
+            </select>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="submitSelect(this.form)">
+                <input type="reset" value="Reset" onclick="resetSelect()">
+            </div>
+        </form>
+
+        <!-- output object select -->
+
+        <form name="outputSelect">
+            <label for="selected">Jurusan yang anda pilih adalah</label>
+            <input type="text" name="selected" id="selected" placeholder="Jurusan kamu." readonly>
+        </form>
+    </main>
+
+    <script src=" script.js"></script>
+</body>
+
+</html>

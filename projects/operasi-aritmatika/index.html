@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../layout/script.js"></script>
+    <title>Operasi Aritmatika</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+                <p>#OperasiAritmatika</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 style="padding-bottom: 3rem;">Operasi Aritmatika</h1>
+        <!-- code -->
+        <script src="script.js"></script>
+        <h3>Operasi aritmatika berdasarkan input user</h3>
+        <form name="operasiAritmatika">
+            <label for="numberOne">Angka pertama: </label>
+            <input type="text" name="numberOne" id="numberOne" placeholder="Input angka pertama" min="1" required
+                inputmode="numeric">
+
+            <label for="numberTwo">Angka kedua: </label>
+            <input type="text" name="numberTwo" id="numberTwo" placeholder="Input angka kedua" min="1" required
+                inputmode="numeric">
+
+            <div class="buttons">
+                <input type="button" value="Tambahkan" onclick="jumlahkan()">
+                <input type="button" value="Kurangkan" onclick="kurangkan()">
+                <input type="button" value="Kalikan" onclick="kalikan()">
+                <input type="button" value="Bagikan" onclick="bagikan()">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+main form .wrapper textarea {
+  width: 100%;
+  height: 10rem;
+  height: fit-content;
+}

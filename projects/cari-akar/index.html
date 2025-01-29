@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../layout/script.js"></script>
+    <title>Cari Akar</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+                <p>#CariAkar</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>mencari akar-akar dari suatu persamaan</h1>
+        <!-- code -->
+        <form>
+            <div class="wrapper">
+                <label for="firstNum">Angka pertama </label>
+                <input type="text" name="firstNum" id="firstNum" placeholder="Inputkan angka pertama" pattern="[0-9]"
+                    required inputmode="numeric">
+            </div>
+
+            <div class="wrapper">
+                <label for="secondNum">Angka kedua </label>
+                <input type="text" name="secondNum" id="secondNum" placeholder="Inputkan angka kedua" pattern="[0-9]"
+                    required inputmode="numeric">
+            </div>
+
+            <div class="wrapper">
+                <label for="lastNum">Angka ketiga </label>
+                <input type="text" name="lastNum" id="lastNum" placeholder="Inputkan angka ketiga" pattern="[0-9]"
+                    required inputmode="numeric">
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="handleSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+
+            <div class="wrapper">
+                <label for="result">Hasil </label>
+                <textarea name="result" id="result" placeholder="Hasil perhitungan akan muncul disini"
+                    readonly></textarea>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

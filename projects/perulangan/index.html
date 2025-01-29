@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../layout/script.js"></script>
+    <title>Perulangan</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+                <p>#PerulanganJavascript</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Perulangan</h1>
+        <!-- code -->
+        <h4 class="subBab">Perulangan For</h4>
+        <script src="forloop.js"></script>
+
+        <h4 class="subBab">Perulangan While</h4>
+        <form>
+            <div class="wrapper">
+                <label for="deret">Masukkan Jumlah Deret : </label>
+                <input type="text" name="deret" id="deret" placeholder="ex: 10" inputmode="numeric" pattern="[0-9]*"
+                    required>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="whileSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+
+            <div class="wrapper">
+                <label for="outputDeret">Jumlah Deret dari</label>
+                <input type="text" name="outputDeret" id="outputDeret" placeholder="ex: 1 sampai 10 adalah 55" readonly>
+            </div>
+        </form>
+
+        <h4 class="subBab">Perulangan Do While</h4>
+        <form method="post">
+            <div class="buttons pw">
+                <h4 class="subBab">password : TJKT</h4>
+                <input type="button" value="Password" onclick="pass()">
+            </div>
+        </form>
+    </main>
+
+    <script src="whileloop.js"></script>
+    <script src="dowhile.js"></script>
+</body>
+
+</html>

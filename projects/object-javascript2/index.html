@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <script src="../layout/script.js"></script>
+    <title>Object Javascript 2</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+                <p>#ObjectJavascript2</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Object Javascript 2</h1>
+        <!-- code -->
+        <h4 class="subBab">Array</h4>
+        <h4>Menampilkan isi indeks ke 2 dari array berisi nama-nama</h4>
+        <script src="namaArr.js"></script>
+        <script src="nilaiArr.js"></script>
+
+        <h4 class="subBab">Object date</h4>
+        <div id="objectDate">
+            <h4 id="date"></h4>
+            <h5 id="clock"></h5>
+        </div>
+
+        <h4 class="subBab">Object math</h4>
+        <form>
+            <div class="wrapper">
+                <label for="firstNum">Angka pertama </label>
+                <input type="text" name="firstNum" id="firstNum" placeholder="ex: 5" inputmode="numeric" pattern="[0-9]"
+                    required>
+            </div>
+
+            <div class="wrapper">
+                <label for="secondNum">Angka kedua </label>
+                <input type="text" name="secondNum" id="secondNum" placeholder="ex: 5" inputmode="numeric"
+                    pattern="[0-9]" required>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Max" onclick="maksimal(this.form)">
+                <input type="button" value="Pangkat" onclick="pow(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+
+            <div class="wrapper">
+                <label for="result">Hasil</label>
+                <textarea name="result" id="result" placeholder="hasil perhitungan matematika akan muncul di sini"
+                    readonly></textarea>
+            </div>
+        </form>
+
+        <div id="divRandom">
+            <h4 id="pengunjung"></h4>
+            <h4 id="akar"></h4>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

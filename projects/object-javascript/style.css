@@ -1,0 +1,126 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+  color: #212121;
+  padding: 1.5rem 0;
+
+  input,
+  textarea,
+  select,
+  option {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: solid 1px #21212160;
+  }
+
+  input[type="button"],
+  input[type="reset"] {
+    background-color: #fbc02d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+
+  input[type="button"]:hover,
+  input[type="reset"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+  }
+
+  input[type="button"]:active,
+  input[type="reset"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+  }
+}
+
+form[name="viewData"] {
+  padding-top: 1.4rem;
+}
+
+h3 {
+  margin-top: 3rem;
+}
+
+label.sigma {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+form[name="objectTextarea"],
+form[name="outputComment"] {
+  textarea {
+    width: 40%;
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+    min-height: 100px;
+    resize: vertical;
+    line-height: 1.5;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+}
+
+input[type="text"],
+select,
+option {
+  width: 20%;
+  max-width: 100%;
+  min-width: 250px;
+  height: auto;
+  min-height: 30px;
+  resize: vertical;
+  line-height: 1.5;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+option:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder,
+select::placeholder,
+option::placeholder {
+  color: #999;
+  font-style: italic;
+}

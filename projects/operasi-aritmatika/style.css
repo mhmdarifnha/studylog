@@ -1,0 +1,70 @@
+h3 {
+  padding-top: 3rem;
+}
+/* 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+  color: #212121;
+
+  input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: solid 1px #21212160;
+  }
+
+  input[type="button"],
+  input[type="reset"] {
+    background-color: #fbc02d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+
+  input[type="button"]:hover,
+  input[type="reset"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+  }
+
+  input[type="button"]:active,
+  input[type="reset"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+  }
+} */
+
+form[name="pengurangan"] {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  div.buttons {
+    input[type="button"],
+    input[type="reset"] {
+      font-size: 0.6rem;
+      padding: 0.3rem 0.7rem;
+    }
+  }
+}

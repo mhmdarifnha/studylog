@@ -1,0 +1,21 @@
+main {
+  form {
+    .wrapper {
+      width: 35%;
+    }
+
+    .wrapper.center {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    form {
+      .wrapper {
+        width: 100%;
+      }
+    }
+  }
+}

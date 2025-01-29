@@ -1,0 +1,40 @@
+textarea {
+  width: 40%;
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+  min-height: 100px;
+  resize: vertical;
+  line-height: 1.5;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.wrapper {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+
+  label {
+    cursor: auto;
+  }
+}
+
+.flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mt {
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+}
