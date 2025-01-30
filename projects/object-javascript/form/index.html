@@ -31,13 +31,13 @@
         <!-- code -->
         <form>
             <div class="wrapper">
-                <label for="name">Nama kamu : </label>
-                <input type="text" name="name" id="name" placeholder="John Doe" required>
+                <label for="nis">NIS kamu : </label>
+                <input type="text" name="nis" id="nis" placeholder="123456" required inputmode="numeric">
             </div>
 
             <div class="wrapper">
-                <label for="address">Alamat : </label>
-                <input type="text" name="address" id="address" placeholder="Street gatotkaca 45" required>
+                <label for="name">Nama kamu : </label>
+                <input type="text" name="name" id="name" placeholder="John Doe" required>
             </div>
 
             <div class="wrapper">
@@ -49,12 +49,27 @@
             </div>
 
             <div class="wrapper">
+                <label for="religion">Agama kamu : </label>
+                <select name="religion" id="religion">
+                    <option value="">Pilih agama kamu</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen Protestan">Kristen Protestan</option>
+                    <option value="Kristen Katolik">Kristen Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </div>
+
+            <div class="wrapper">
                 <label for="major">Pilih jurusan : </label>
                 <select name="major" id="major" required>
-                    <option value=" ">jurusan di smk nu ungaran</option>
+                    <option value="">jurusan di smk nu ungaran</option>
                     <option value="TJKT">TJKT</option>
                     <option value="BP">BP</option>
                     <option value="DKV">DKV</option>
+                    <option value="TO">TO</option>
+                    <option value="TE">TE</option>
                 </select>
             </div>
 
@@ -86,33 +101,38 @@
 
             <!-- output -->
             <div class="wrapper mt">
-                <label for="viewName">Nama kamu adalah </label>
-                <input type="text" name="viewName" id="viewName" placeholder="Your name..." readonly>
+                <label for="viewNis">NIS kamu adalah</label>
+                <input type="text" name="viewNis" id="viewNis" placeholder="NIS kamu...">
             </div>
 
             <div class="wrapper">
-                <label for="viewAddress">Alamat kamu adalah </label>
-                <input type="text" name="viewAddress" id="viewAddress" placeholder="Your address..." readonly>
+                <label for="viewName">Nama kamu adalah </label>
+                <input type="text" name="viewName" id="viewName" placeholder="Nama kamu..." readonly>
+            </div>
+
+            <div class="wrapper">
+                <label for="viewReligion">Agama kamu adalah </label>
+                <input type="text" name="viewReligion" id="viewReligion" placeholder="Agama kamu..." readonly>
             </div>
 
             <div class="wrapper">
                 <label for="viewGender">Gender kamu adalah </label>
-                <input type="text" name="viewGender" id="viewGender" placeholder="Your gender..." readonly>
+                <input type="text" name="viewGender" id="viewGender" placeholder="Jenis kelamin kamu..." readonly>
             </div>
 
             <div class="wrapper">
                 <label for="viewMajor">Jurusan kamu adalah </label>
-                <input type="text" name="viewMajor" id="viewMajor" placeholder="Your major..." readonly>
+                <input type="text" name="viewMajor" id="viewMajor" placeholder="Jurusan kamu..." readonly>
             </div>
 
             <div class="wrapper">
                 <label for="viewHobby">Hobby kamu adalah </label>
-                <input type="text" name="viewHobby" id="viewHobby" placeholder="Your Hobby..." readonly>
+                <input type="text" name="viewHobby" id="viewHobby" placeholder="Hobi kamu..." readonly>
             </div>
 
             <div class="wrapper">
                 <label for="viewComment">Komentar kamu adalah </label>
-                <textarea name="viewComment" id="viewComment" readonly placeholder="Your comment..."></textarea>
+                <textarea name="viewComment" id="viewComment" readonly placeholder="Komentar kamu..."></textarea>
             </div>
         </form>
     </main>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../layout/script.js"></script>
+    <title>latihan event onclick</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+            </div>
+        </div>
+    </nav>
+
+    <main id="bg">
+        <h1>Latihan event onclick</h1>
+        <!-- code -->
+        <h4>Pilih salah satu warna</h4>
+        <h4 id="displaySelectedColor"></h4>
+
+        <div class="buttons">
+            <button onclick="bg('blue')">Biru</button>
+            <button onclick="bg('orange')">Oren</button>
+            <button onclick="bg('green')">Hijau</button>
+            <button onclick="bg('chocolate')">Cokelat</button>
+            <button onclick="bg('gray')">Abu-abu</button>
+            <button onclick="bg('white')">Putih</button>
+            <button onclick="bg('red')">Merah</button>
+            <button onclick="bg('black')">Hitam</button>
+            <button onclick="bg('yellow')">Kuning</button>
+            <button onclick="bg('pink')">Merah muda</button>
+            <button onclick="bg('cyan')">Cyan</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,15 +1,16 @@
 handleSubmit = (form) => {
+  let nis = form.nis.value;
   let nama = form.name.value;
-  let address = form.address.value;
   let gender = form.gender.value;
+  let religion = form.religion.value;
   let major = form.major.value;
   let hobby = "";
   let ngoding = form.ngoding.checked;
   let belajar = form.belajar.checked;
   let comment = form.comment.value;
 
-  if (major == " ") {
-    major = "";
+  if (isNaN(nis)) {
+    alert("NIS harus berupa angka");
   }
 
   if (ngoding == true && belajar == true) {
@@ -24,26 +25,28 @@ handleSubmit = (form) => {
 
   //   validasi input kosong
   if (
+    nis == "" ||
     nama == "" ||
-    address == "" ||
+    religion == "" ||
     gender == "" ||
     major == "" ||
     hobby == "" ||
     comment == ""
   ) {
+    nis = "";
     nama = "";
-    address = "";
+    religion = "";
     gender = "";
     major = "";
     hobby = "";
     comment = "";
-    isSigma = "";
     alert(`Kamu belum mengisi semua field`);
   }
 
   //   munculkan data
+  form.viewNis.value = nis;
   form.viewName.value = nama;
-  form.viewAddress.value = address;
+  form.viewReligion.value = religion;
   form.viewGender.value = gender;
   form.viewMajor.value = major;
   form.viewHobby.value = hobby;
