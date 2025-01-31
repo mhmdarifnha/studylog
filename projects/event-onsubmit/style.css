@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "gatotkaca";
+  src: url("./assets/font/GATOTKACA.otf");
+  font-weight: normal;
+  font-size: normal;
+}
+
+#gatotkacaSearchEngine {
+  width: 100%;
+  height: auto;
+
+  h1 {
+    font-family: "gatotkaca", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+
+  .search-box {
+    position: relative;
+    margin-top: 1.5rem;
+
+    input[type="text"] {
+      border-radius: 0.2rem;
+      -webkit-border-radius: 0.2rem;
+      -moz-border-radius: 0.2rem;
+      -ms-border-radius: 0.2rem;
+      -o-border-radius: 0.2rem;
+      border: solid 1px #818181;
+      padding: 0.5rem;
+      width: 35%;
+    }
+
+    .icon {
+      position: absolute;
+      top: 0.2rem;
+      right: 27rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #gatotkacaSearchEngine {
+    .search-box {
+      input[type="text"] {
+        width: 100%;
+        border-radius: 0.3rem;
+        -webkit-border-radius: 0.3rem;
+        -moz-border-radius: 0.3rem;
+        -ms-border-radius: 0.3rem;
+        -o-border-radius: 0.3rem;
+      }
+
+      .icon {
+        top: 0.2rem;
+        right: 0.3rem;
+      }
+    }
+  }
+}

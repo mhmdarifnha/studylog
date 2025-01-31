@@ -26,9 +26,13 @@ const handleSubmit = (form) => {
   const name = form.name.value;
   const address = form.address.value;
 
+  if (isNaN(nis)) {
+    return alert("Input NIS harus angka");
+  }
+
   if (nis != "" && name != "" && address != "") {
-    alert("Terimakasih sudah mengisi");
+    return alert("Terimakasih sudah mengisi");
   } else {
-    alert("Data yang dibutuhkan mohon dilengkapi");
+    return alert("Data yang dibutuhkan mohon dilengkapi");
   }
 };
