@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <script src="../layout/script.js"></script>
+    <title>latihan event onFocus dan onBlur</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Latihan Event OnFocus dan OnBlur</h1>
+        <!-- code -->
+        <form>
+            <div class="wrapper">
+                <label for="nis">NIS</label>
+                <input type="text" name="nis" id="nis" placeholder="ex:123456" inputmode="numeric"
+                    onfocus="window.status='Inputkan NIS';" onblur="inputNis()" required>
+            </div>
+
+            <div class="wrapper">
+                <label for="name">Nama</label>
+                <input type="text" name="name" id="name" placeholder="ex:John Doe"
+                    onfocus="window.status='Inputkan nama';" onblur="inputName()" required>
+            </div>
+
+            <div class="wrapper">
+                <label for="address">Alamat</label>
+                <input type="text" name="address" id="address" placeholder="ex:Jl setinggen"
+                    onfocus="window.status='Inputkan alamat';" onblur="inputAddress()" required>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="handleSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

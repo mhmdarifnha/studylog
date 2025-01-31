@@ -22,3 +22,17 @@
     top: 2px;
   }
 }
+
+#lamps {
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+
+  h4 {
+    padding: 0.5rem;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
