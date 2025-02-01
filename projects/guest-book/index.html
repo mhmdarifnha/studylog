@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <script src="../layout/script.js"></script>
+    <title>guest book</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>guest book</h1>
+        <h4 id="info"></h4>
+        <!-- code -->
+        <form action="mailto:muhamadarifulinnuha@gmail.com" method="post" enctype="text/plain">
+            <div class="wrapper">
+                <label for="name">Nama kamu</label>
+                <input type="text" name="name" id="name" placeholder="ex: John Doe" required>
+            </div>
+
+            <div class="wrapper">
+                <label for="email">Email kamu</label>
+                <input type="email" name="email" id="email" placeholder="ex: smdboyy@gmail.com" required>
+            </div>
+
+            <div class="wrapper">
+                <label for="comment">Komentar kamu</label>
+                <textarea name="comment" id="comment" placeholder="ex: aku suka baca buku" required></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="button" name="submit" value="Submit" onclick="handleSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -180,6 +180,7 @@ main {
   }
 
   input[type="text"],
+  input[type="email"],
   select,
   option {
     width: 13rem;
@@ -196,6 +197,7 @@ main {
   }
 
   input[type="text"]:focus,
+  input[type="email"]:focus,
   textarea:focus,
   select:focus,
   option:focus {
@@ -205,6 +207,7 @@ main {
   }
 
   input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
   textarea::placeholder,
   select::placeholder,
   option::placeholder {
@@ -213,6 +216,7 @@ main {
   }
 
   textarea {
+    font-family: Arial, Helvetica, sans-serif;
     width: 40%;
     max-width: 100%;
     min-width: 300px;
