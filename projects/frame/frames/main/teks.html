@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frame2.css">
+    <title>Objek Teks</title>
+</head>
+
+<body>
+    <h3>Objek Teks</h3>
+
+    <form>
+        <div class="row">
+            <label for="name">Inputkan Nama Kamu</label>
+            <input type="text" name="name" id="name" placeholder="ex: John Doe" required>
+        </div>
+
+        <div class="buttons">
+            <input type="button" value="Submit" onclick="handleSubmit(this.form)">
+            <input type="reset" value="Reset">
+        </div>
+
+        <div class="row">
+            <label for="result">Nama kamu adalah</label>
+            <input type="text" name="result" id="result" placeholder="John Doe" readonly>
+        </div>
+    </form>
+
+    <script src="teks.js"></script>
+</body>
+
+</html>

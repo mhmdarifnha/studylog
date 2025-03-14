@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frame2.css">
+    <title>Objek Select</title>
+</head>
+
+<body>
+    <h3>Objek Select</h3>
+
+    <form>
+        <div class="row">
+            <label for="select">Pilih satu opsi</label>
+            <select name="select" id="select" required>
+                <option value="">Pilih opsi</option>
+                <option value="sigma">Sigma</option>
+                <option value="sakmadig">Sakmadig</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <input type="button" value="Submit" onclick="handleSubmit(this.form)">
+            <input type="reset" value="Reset" onclick="handleReset(this.form)">
+        </div>
+
+        <div class="row">
+            <label for="result">Opsi yang kamu pilih</label>
+            <input type="text" name="result" id="result" placeholder="ex: sigma" readonly>
+        </div>
+    </form>
+
+    <script src="select.js"></script>
+</body>
+
+</html>

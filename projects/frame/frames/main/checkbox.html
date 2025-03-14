@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frame2.css">
+    <title>Objek Checkbox</title>
+</head>
+
+<body>
+    <h3>Objek Checkbox</h3>
+
+    <form>
+        <div class="row">
+            <label for="checkbox">Ceklis checkboxnya</label>
+            <label for="satu"><input type="checkbox" name="satu" id="satu"> Satu</label>
+            <label for="dua"><input type="checkbox" name="dua" id="dua"> Dua</label>
+        </div>
+
+        <div class="buttons">
+            <input type="button" value="Submit" onclick="handleSubmit(this.form)">
+            <input type="reset" value="Reset">
+        </div>
+
+        <div class="row">
+            <label for="result">Yang kamu ceklis</label>
+            <textarea name="result" id="result" placeholder="apa" readonly></textarea>
+        </div>
+    </form>
+
+    <script src="checkbox.js"></script>
+</body>
+
+</html>

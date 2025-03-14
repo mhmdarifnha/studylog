@@ -1,0 +1,207 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Styling Form === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* === Baris Input === */
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* === Label Styling === */
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* === Input & Textarea === */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+textarea {
+  height: 5rem;
+}
+
+/* === Placeholder Warna & Fokus === */
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #fbc02d;
+  outline: none;
+  box-shadow: 0 0 5px rgba(251, 192, 45, 0.5);
+}
+
+/* === Tombol Styling === */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons input {
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+/* === Warna Tombol === */
+input[type="button"] {
+  background: #fbc02d;
+  color: #212121;
+}
+
+input[type="button"]:hover {
+  background: #e0a800;
+}
+
+input[type="reset"] {
+  background: #d32f2f;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background: #b71c1c;
+}
+
+/* === Styling Select === */
+select {
+  cursor: pointer;
+  background: #fff;
+}
+
+/* === Styling Checkbox === */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* === Checkbox Label === */
+label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* === Styling Hasil Output === */
+textarea[readonly],
+input[readonly] {
+  background: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/*body {
+  display: flex;
+  padding: 3rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+
+  input[type="button"],
+  input[type="reset"] {
+    padding: 0.3rem;
+    height: fit-content;
+    width: 4rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    min-width: 50px;
+    max-width: 220px;
+    height: 25px;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+    overflow-wrap: break-word;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+  }
+
+  input:hover,
+  textarea:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+
+  input:active,
+  textarea:active {
+    transform: scale(0.95);
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 2px solid grey;
+  }
+
+  textarea {
+    height: 100px;
+    min-height: 50px;
+    max-height: 450px;
+    resize: none;
+  }
+}
+
+form {
+  margin-top: 0.5rem;
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+} */

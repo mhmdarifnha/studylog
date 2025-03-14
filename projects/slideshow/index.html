@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../layout/global.css">
     <link rel="stylesheet" href="style.css">
     <script src="../layout/script.js"></script>
-    <title>Latihan Object Document</title>
+    <title>slideshow</title>
 </head>
 
 <body>
@@ -20,30 +20,20 @@
                 <p>#BelajarHTML</p>
                 <p>#BelajarCSS</p>
                 <p>#WebsiteDeveloper</p>
-                <p>#LatihanObjectWindow</p>
             </div>
         </div>
     </nav>
 
     <main>
-        <h1>Latihan Object Document</h1>
-        <!-- code -->
-        <form name="objctDcmnt">
-            <!-- <h4 class="subBab">Pilih salah satu opsi</h4> -->
-            <label for="page">Pilih salah satu opsi</label>
-            <select name="page" id="page" onchange="goToPage()" size="3">
-                <option>Latihan greeting teks dinamis</option>
-                <option>Latihan perhitungan bunga</option>
-                <option>Latihan percabangan</option>
-            </select>
+        <h1>slideshow</h1>
+        <img id="galleryImg" alt="image">
+        <div class="row">
+            <button onclick="prev()">Previous</button>
+            <button onclick="next()">Next</button>
+        </div>
 
-            <h4 id="lihatkan"></h4>
-
-            <div class="buttons">
-                <input type="button" value="Go to page!" onclick="goTo(this.form)">
-            </div>
-
-        </form>
+        <h1 class="mt">Penggunaan Objek Image Untuk Membuat SlideShow</h1>
+        <img id="slideshow" alt="image">
     </main>
 
     <script src="script.js"></script>

@@ -6,14 +6,14 @@ const goToPage = () => {
 };
 
 const goTo = (form) => {
-  let index = page.selectedIndex;
+  let index = form.page.selectedIndex;
 
-  if ((index = 0)) {
+  if (index == 0) {
     window.location.href = "../greeting/index.html";
-  } else if ((index = 1)) {
+  } else if (index == 1) {
     window.location.href = "../perhitungan-bunga/index.html";
-  } else if ((index = 2)) {
-    window.location.href = "../percabangan//latihan/index.html";
+  } else if (index == 2) {
+    window.location.href = "../percabangan/latihan/index.html";
   }
 
   return true;

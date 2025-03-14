@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame satu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Pilih latihan di bawah ini</h3>
+
+    <form>
+        <label class="label" for="mtk">
+            <input type="radio" name="latihan" id="mtk" value="Matematika" checked>
+            <span class="text">Matematika</span>
+        </label>
+        <label class="label" for="teks">
+            <input type="radio" name="latihan" id="teks" value="Objek Teks">
+            <span class="text">Objek Teks</span>
+        </label>
+        <label class="label" for="select">
+            <input type="radio" name="latihan" id="select" value="Objek Select">
+            <span class="text">Objek Select</span>
+        </label>
+        <label class="label" for="checkbox">
+            <input type="radio" name="latihan" id="checkbox" value="Objek Checkbox">
+            <span class="text">Objek Checkbox</span>
+        </label>
+
+        <input type="button" value="Tampilkan!" onclick="handleSubmit(this.form)">
+    </form>
+
+    <h4 id="viewContent"></h4>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

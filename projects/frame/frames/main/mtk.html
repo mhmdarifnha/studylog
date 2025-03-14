@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame dua</title>
+    <link rel="stylesheet" href="frame2.css">
+</head>
+
+<body>
+    <h3>Matematika</h3>
+
+    <form>
+        <div class="row">
+            <label for="firstNum">Input angka pertama </label>
+            <input type="text" name="firstNum" id="firstNum" placeholder="ex: 5" inputmode="numeric">
+        </div>
+        <div class="row">
+            <label for="secondNum">Input angka kedua </label>
+            <input type="text" name="secondNum" id="secondNum" placeholder="ex: 5" inputmode="numeric">
+        </div>
+
+        <div class="buttons">
+            <input type="button" value="Tambah" onclick="tambah(this.form)">
+            <input type="button" value="Kurang" onclick="kurang(this.form)">
+            <input type="button" value="Kali" onclick="kali(this.form)">
+            <input type="button" value="Bagi" onclick="bagi(this.form)">
+            <input type="reset" value="Reset">
+        </div>
+
+        <div class="row">
+            <label for="result">Hasil perhitungan </label>
+            <textarea name="result" id="result" placeholder="Hasil perhitungan matematika akan muncul di sini.."
+                readonly></textarea>
+            <!-- <input type="text" name="result" id="result" placeholder="Hasil perhitungan..." readonly> -->
+        </div>
+    </form>
+
+    <script src="mtk.js"></script>
+</body>
+
+</html>

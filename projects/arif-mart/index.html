@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../layout/global.css">
+    <script src="../layout/script.js"></script>
+    <title>Arif-mart</title>
+</head>
+
+<body>
+    <nav>
+        <button class="back" onclick="navigateBack()">Kembali</button>
+        <div class="marquee">
+            <div class="text">
+                <p>#BelajarJavascript</p>
+                <p>#BelajarHTML</p>
+                <p>#BelajarCSS</p>
+                <p>#WebsiteDeveloper</p>
+                <p>#ArifMart</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Arif Mart</h1>
+
+        <form>
+            <div class="grid-2">
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="name">Nama kamu</label>
+                        <input type="text" name="name" id="name" placeholder="ex: John Doe" required>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="menus">Pilih menu</label>
+                        <select name="menus" id="menus">
+                            <option value="">Pilih satu menu</option>
+                            <option value="piscok">Piscok</option>
+                            <option value="gedang goreng">Gedang goreng</option>
+                            <option value="esteh">Es Teh</option>
+                            <option value="kopi">Kopi</option>
+                        </select>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="sumOfMenu">Mau beli berapa?</label>
+                        <input type="text" name="sumOfMenu" id="sumOfMenu" placeholder="ex: 2" required
+                            inputmode="numeric">
+                    </div>
+
+                    <div class="wrapper">
+                        <label>Punya member?</label>
+                        <label for="member">
+                            <input type="checkbox" name="member" id="member"> <span id="askMember"></span>
+                        </label>
+                        <label></label>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="wrapper">
+                        <label for="price">Harga makanan</label>
+                        <input type="text" name="price" id="price" placeholder="ex: 10000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="subTotal">Subtotal</label>
+                        <input type="text" name="subTotal" id="subTotal" placeholder="ex: 20000" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="discount">Diskon</label>
+                        <input type="text" name="discount" id="discount" placeholder="ex: 0" readonly>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="pay">Total Bayar</label>
+                        <input type="text" name="pay" id="pay" placeholder="ex: 20000" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <h4 id="textDisplay"></h4>
+            <div class="buttons">
+                <input type="button" value="Submit" onclick="handleSubmit(this.form)">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

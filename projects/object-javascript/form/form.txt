@@ -1,0 +1,7 @@
+NIS
+nama 
+jenis kelamin
+agama
+status
+jurusan
+komentar
