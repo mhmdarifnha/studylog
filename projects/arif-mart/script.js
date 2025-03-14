@@ -19,14 +19,16 @@ function handleSubmit(form) {
     price = 4000;
   }
 
-  if (nama == "") info.innerText += " Siapa namamu?";
-  if (menu == "") info.innerText += " Pilih salah satu menu!";
-  if (isNaN(sumOfMenu)) info.innerText += " Minimal beli satu!";
+  if (nama == "") infoText += " Siapa namamu?";
+  if (menu == "") infoText += " Pilih salah satu menu!";
+  if (isNaN(sumOfMenu)) infoText += " Minimal beli satu!";
 
   if (nama == "" || menu == "" || isNaN(sumOfMenu)) {
-    info.innerText += " Input yang benar!";
+    infoText += " Input yang benar!";
+    info.innerText = infoText;
   } else {
-    info.innerText = `Woi ${nama} bayar dulu ya!`;
+    infoText = `Woi ${nama} bayar dulu ya!`;
+    info.innerText = infoText;
     if (member) {
       discount = price * 0.3;
     } else {
@@ -41,6 +43,10 @@ function handleSubmit(form) {
     form.pay.value = pay;
   }
 }
+
+document.getElementById("reset").addEventListener("click", () => {
+  document.getElementById("textDisplay").innerText = "";
+})
 
 // let member = document.getElementById("member");
 // member.addEventListener("change", function () {

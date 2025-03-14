@@ -13,18 +13,25 @@ const bg = (selectedColor) => {
 };
 
 // saklar lampu
-const lampu = document.getElementById("lamp");
-const hour = new Date().getHours();
-const minute = new Date().getMinutes();
-const waktu = document.getElementById("waktu");
+// const jam = () => {
+//   const lampu = document.getElementById("lamp");
+//   const hour = new Date().getHours();
+//   const minute = new Date().getMinutes();
+//   const second = new Date().getSeconds();
+//   const waktu = document.getElementById("waktu");
 
-if (hour >= 5 && hour < 17) {
-  lampu.src = "./assets/off.gif";
-  waktu.textContent = `Sekarang jam ${hour}:${minute} lampu dimatikan`;
-} else if (hour >= 17 && hour < 5) {
-  lampu.src = "./assets/on.gif";
-  waktu.textContent = `Sekarang sudah jam ${hour}:${minute} lampu dinyalakan`;
-}
+//   if (hour >= 5 && hour < 17) {
+//     lampu.src = "./assets/off.gif";
+//     waktu.textContent = `Sekarang jam ${hour}:${minute}:${second} lampu dimatikan`;
+//   } else if (hour >= 17 && hour < 5) {
+//     lampu.src = "./assets/on.gif";
+//     waktu.textContent = `Sekarang sudah jam ${hour}:${minute}:${second} lampu dinyalakan`;
+//   }
+
+//   setTimeout(jam, 1000);
+// }
+
+// jam();
 
 const saklarOn = () => {
   const info = document.getElementById("infoLamp");
