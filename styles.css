@@ -227,6 +227,7 @@ section#projects {
 .infoSearch {
   width: 75%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -286,6 +287,10 @@ section {
     }
   }
 
+  .infoSearch {
+    width: 100%;
+  }
+  
   main {
     section#home {
       display: flex;
@@ -303,7 +308,6 @@ section {
 
     section#projects {
       width: 100%;
-      margin-top: 115rem;
 
       h1 {
         font-size: 1.9rem;
