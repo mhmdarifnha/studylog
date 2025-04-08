@@ -28,19 +28,22 @@
             <h1>Projects</h1>
             <p>This section features my school assignments and projects.</p>
             <div class="search-container">
-                <svg id="searchButton" class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg id="searchButton" class="search-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    fill="#000000" viewBox="0 0 256 256">
                     <path
-                        d="M10.5 2C5.81 2 2 5.81 2 10.5S5.81 19 10.5 19c2.21 0 4.21-.79 5.78-2.09l4.88 4.88 1.41-1.41-4.88-4.88C19.21 14.71 20 12.71 20 10.5 20 5.81 16.19 2 10.5 2zM10.5 17C7.46 17 5 14.54 5 10.5S7.46 4 10.5 4 16 6.46 16 10.5 13.54 17 10.5 17z" />
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                    </path>
                 </svg>
                 <input type="text" name="searchInput" class="searchInput" id="searchInput" placeholder="Search...">
             </div>
             <div class="infoSearch">
-                <p id="loading">Loading<span id="dots">...</span></p>
                 <p id="searching"></p>
                 <p id="showAll"></p>
             </div>
+            <p id="loading">Loading<span id="dots">...</span></p>
             <div class="items" id="items">
             </div>
+            <p id="noResult"></p>
         </section>
     </main>
 

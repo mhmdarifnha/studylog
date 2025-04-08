@@ -17,7 +17,7 @@ const displayProjects = (projects) => {
     </div>
         `
     })
-}
+};
 
 displayProjects(projects)
 
@@ -26,7 +26,8 @@ const button = document.getElementById('searchButton')
 const searching = document.getElementById("searching");
 const show = document.getElementById('showAll');
 const loading = document.getElementById('loading');
-const dots = document.getElementById('dots')
+const dots = document.getElementById('dots');
+const noResult = document.getElementById('noResult');
 
 let dotCount = 0;
 let loadingInterval;
@@ -49,21 +50,33 @@ function hideLoading() {
 
 const search = (keyword) => {
     if (!keyword) {
-        searching.innerHTML = 'Ketik sesuatu untuk mencari...';
+        searching.innerHTML = 'Type something to search...';
         show.textContent = '';
         displayProjects(projects)
     } else {
-        searching.innerHTML = '';
         const filteredProjects = projects.filter((project) =>
             project.title.toLowerCase().includes(keyword.toLowerCase()));
+        searching.innerHTML = '';
         showLoading();
         setTimeout(() => {
-            searching.textContent = `Hasil pencarian untuk ${keyword}`;
-            show.textContent = 'Tampilkan semua';
-            displayProjects(filteredProjects);
-            hideLoading();
-            input.value = '';
-        }, 1500);
+            searching.textContent = `Found ${filteredProjects.length} results for "${keyword}"`;
+            show.textContent = 'Show all';
+        }, 1500)
+        if (filteredProjects.length > 0) {
+            setTimeout(() => {
+                noResult.classList.toggle('none');
+                displayProjects(filteredProjects);
+                hideLoading();
+                input.value = '';
+            }, 1500);
+        } else {
+            setTimeout(() => {
+                itemsContainer.innerHTML = '';
+                noResult.textContent = `No results found for ${keyword}`;
+                hideLoading();
+                input.value = '';
+            }, 1500)
+        }
     }
 };
 
@@ -79,6 +92,8 @@ button.addEventListener('click', () => {
 
 show.addEventListener('click', () => {
     showLoading();
+    itemsContainer.innerHTML = '';
+    noResult.classList.toggle('none');
     searching.textContent = '';
     setTimeout(() => {
         displayProjects(projects);

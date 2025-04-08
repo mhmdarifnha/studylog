@@ -214,10 +214,29 @@ section#projects {
 #loading {
   margin-top: 0.5rem;
   display: none;
+  text-align: center;
 }
 
 #showAll {
+  margin-top: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+#showAll:hover {
+  text-decoration: underline;
+}
+
+#noResult {
+  margin-top: 6rem;
+}
+
+.none {
+  display: none;
 }
 
 .item {
@@ -233,7 +252,8 @@ section#projects {
 
 section {
   min-height: 100vh;
-  height: auto;
+  height: max-content;
+  max-height: max-content;
 }
 
 @media (max-width: 768px) {
@@ -262,10 +282,6 @@ section {
     box-sizing: border-box;
   }
 
-  section {
-    min-height: 60dvh;
-  }
-
   header {
     justify-content: center;
     align-items: center;
@@ -290,7 +306,7 @@ section {
   .infoSearch {
     width: 90%;
   }
-  
+
   main {
     section#home {
       display: flex;
@@ -307,6 +323,7 @@ section {
     }
 
     section#projects {
+      margin-top: -55vh;
       width: 100%;
 
       h1 {
