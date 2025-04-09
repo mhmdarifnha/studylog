@@ -85,7 +85,7 @@ main {
   }
 
   section#projects {
-    margin-top: 42rem;
+    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
